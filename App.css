@@ -1,0 +1,106 @@
+/* 🌟 General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  transition: background 0.3s ease-in-out;
+}
+
+/* 🌙 Dark Mode Styles */
+.dark-mode {
+  background-color: #181818;
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: #242424;
+  color: white;
+}
+
+/* ✅ Header/Navbar */
+.navbar {
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+
+/* 🎨 Dashboard Container */
+.dashboard-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 📊 Charts Section */
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 45%;
+}
+
+/* 📋 Data Table */
+.table-container {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+.table th {
+  background: #007bff;
+  color: white;
+}
+
+.table-dark th {
+  background: #343a40;
+}
+
+/* 📌 Buttons */
+.btn-custom {
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+
+/* 🔄 Loading Animation */
+.loading-spinner {
+  text-align: center;
+  padding: 50px;
+}
+
+.loading-spinner .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .chart-card {
+    width: 90%;
+  }
+}

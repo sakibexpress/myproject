@@ -1,0 +1,146 @@
+/* 🌟 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* 🌟 Full Screen Background */
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1877F2, #00A6FF);
+  }
+  
+  /* 🌟 Card Style for Form */
+  .auth-box {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* 🌟 Title */
+  .auth-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* 🌟 Input Fields */
+  .auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* 🌟 Input Focus Effect */
+  .auth-box input:focus {
+    border: 1px solid #1877F2;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(24, 119, 242, 0.5);
+  }
+  
+  /* 🌟 Auth Buttons */
+  .btn-auth, .btn-google {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn-auth {
+    background: #1877F2;
+    color: white;
+    border: none;
+  }
+  
+  .btn-auth:hover {
+    background: #125dbb;
+  }
+  
+  /* 🌟 Google Login Button */
+  .btn-google {
+    background: #DB4437;
+    color: white;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .btn-google:hover {
+    background: #B23121;
+  }
+  
+  /* 🌟 Forgot Password & Toggle */
+  .forgot-password, .toggle-text {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1877F2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .forgot-password:hover, .toggle-text:hover {
+    color: #125dbb;
+  }
+  
+  /* 🌟 Dark Mode */
+  .dark-mode {
+    background: #121212;
+    color: white;
+  }
+  
+  .dark-mode .auth-box {
+    background: #1E1E1E;
+  }
+  
+  .dark-mode input {
+    background: #333;
+    color: white;
+    border: 1px solid #444;
+  }
+  
+  .dark-mode input:focus {
+    border: 1px solid #1877F2;
+    box-shadow: 0px 0px 5px rgba(24, 119, 242, 0.8);
+  }
+  
+  .dark-mode .btn-auth {
+    background: #00A6FF;
+  }
+  
+  .dark-mode .btn-auth:hover {
+    background: #007ACC;
+  }
+  
+  .dark-mode .forgot-password, 
+  .dark-mode .toggle-text {
+    color: #00A6FF;
+  }
+  
+  .dark-mode .forgot-password:hover, 
+  .dark-mode .toggle-text:hover {
+    color: #007ACC;
+  }
+  
+  /* 🌟 Responsive Design */
+  @media (max-width: 450px) {
+    .auth-box {
+      width: 90%;
+    }
+  }
+  
